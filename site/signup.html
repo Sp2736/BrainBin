@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!-- Signup Page for BrainBin -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup | BrainBin</title>
+    <link rel="stylesheet" href="userinf.css" />
+    <link rel="icon" href="icon2.png" />
+  </head>
+
+  <body>
+    <script src="signup.js"></script>
+    <div class="container">
+      <!-- Sidebar Navigation -->
+      <header>
+        <div id="navdiv">
+          <nav>
+            <a href="index.html" class="acard">Go to Home</a>
+            <a href="portfolio/admin.html" target="_blank" class="acard"
+              >Portfolio</a
+            >
+            <a href="contact.html" class="acard">Contact Us</a>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Main Signup Form Section -->
+      <main>
+        <div class="form-container">
+          <h2>Signup to use BrainBin <img src="icon1.png" /></h2>
+          <form method="post" id="registrationForm" action="signup.php">
+            <label for="username">
+              Username:
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Your College ID"
+                required
+                pattern="[A-Za-z0-9]+"
+              />
+            </label>
+
+            <label for="email">
+              Email:
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+            </label>
+
+            <label>
+              Phone Number:
+              <input
+                type="tel"
+                id="phone"
+                pattern="[0-9]{10}"
+                placeholder="Your Phone Number"
+                required
+              />
+            </label>
+
+            <label>
+              Date of Birth:
+              <input type="date" id="dob" required />
+            </label>
+
+            <div class="pwdeye">
+              <label for="password">
+                Password (no symbols):
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Your Password"
+                  required
+                  pattern="[A-Za-z0-9]+"
+                />
+                <span
+                  class="toggle-eye"
+                  onclick="toggleVisibility('password', this)"
+                  >( - _ - )</span
+                >
+              </label>
+            </div>
+
+            <div class="pwdeye">
+              <label>
+                Confirm Password:
+                <input
+                  type="password"
+                  name="confirmpwd"
+                  id="confirmpwd"
+                  placeholder="Confirm Your Password"
+                  required
+                />
+                <span
+                  class="toggle-eye"
+                  onclick="toggleVisibility('confirmpwd', this)"
+                  >( - _ - )</span
+                >
+              </label>
+            </div>
+
+            <label>
+              <p>
+                <input type="checkbox" id="terms" required />I agree to the
+                terms and conditions
+              </p>
+            </label>
+            <button id="open-popup" class="popup-button">
+              Click Here To View T&C
+            </button>
+
+            <br />
+            <div id="errorMessages" style="margin-bottom: 10px"></div>
+            <button type="submit" id="subbtn">Signup to BrainBin</button>
+          </form>
+
+          <!-- Collapsible FAQ -->
+          <section class="faq-section">
+            <div>
+              <h3>Frequently Asked Questions</h3>
+            </div>
+            <br />
+            <div class="faq-item">
+              <button class="faq-toggle">
+                Why do I need to provide an email?
+              </button>
+              <div class="faq-content">
+                <p>
+                  Email is used for account recovery and important
+                  notifications.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-toggle">Is my data secure?</button>
+              <div class="faq-content">
+                <p>
+                  We use encryption and secure methods to store your
+                  information.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <!-- Popup model -->
+    <div id="popup-model" class="popup-model hidden">
+      <div class="popup-content">
+        <span id="close-popup" class="popup-close">&times;</span>
+        <h2>Terms & Conditions</h2>
+
+        <p>
+          <strong>Effective Date:</strong> August 5, 2025<br />
+          <strong>Last Updated:</strong> August 5, 2025
+        </p>
+        <br />
+        <p>
+          Welcome to <strong>BrainBin</strong>! These Terms and Conditions
+          govern your access to and use of our platform, services, and
+          resources. By signing up or accessing BrainBin, you agree to these
+          terms. Please read them carefully.
+        </p>
+        <br />
+        <h4>Eligibility</h4>
+        <ul type="none">
+          <li>Be a student, educator, or academic contributor.</li>
+          <li>Provide accurate and truthful registration details.</li>
+          <li>Be at least 18 years old.</li>
+        </ul>
+        <br />
+        <h4>Your Responsibilities</h4>
+        <ul type="none">
+          <li>
+            Use BrainBin only for educational, personal, or academic purposes.
+          </li>
+          <li>Maintain the confidentiality of your account and password.</li>
+          <li>Not share or misuse other users' information.</li>
+          <li>
+            Not upload any malicious code, spam, or unauthorized material.
+          </li>
+        </ul>
+        <br />
+        <h4>Registration & Data</h4>
+        <ul type="none">
+          <li>
+            You allow BrainBin to store your submitted data (e.g., college ID,
+            email, phone number, etc.) securely.
+          </li>
+          <li>
+            You are responsible for keeping your profile information updated.
+          </li>
+          <li>You can request data deletion by contacting our team.</li>
+        </ul>
+        <br />
+        <h4>Intellectual Property</h4>
+        <ul type="none">
+          <li>
+            All platform content, code, designs, and features belong to BrainBin
+            unless otherwise noted.
+          </li>
+          <li>
+            You may not copy, distribute, or reuse platform materials without
+            explicit permission.
+          </li>
+        </ul>
+        <br />
+        <h4>Prohibited Actions</h4>
+        <ul type="none">
+          <li>Misrepresent yourself or create fake accounts.</li>
+          <li>Attempt to gain unauthorized access to BrainBin’s systems.</li>
+          <li>
+            Use BrainBin for cheating, plagiarism, or academic dishonesty.
+          </li>
+        </ul>
+        <br />
+        <h4>Platform Rights</h4>
+        <ul type="none">
+          <li>Suspend or delete your account for violation of these terms.</li>
+          <li>
+            Modify or discontinue the platform at any time without prior notice.
+          </li>
+        </ul>
+        <br />
+        <h4>Third-Party Links</h4>
+        <p>
+          BrainBin may contain links to third-party websites or content (e.g.,
+          external portfolios). We are not responsible for their practices or
+          content.
+        </p>
+        <br />
+        <h4>Privacy</h4>
+        <p>
+          Your data is protected in accordance with our Privacy Policy. We do
+          <strong>not</strong> sell or trade your personal information.
+        </p>
+        <br />
+        <h4>Updates</h4>
+        <p>
+          We may update these Terms from time to time. Significant changes will
+          be notified on our platform or via email.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

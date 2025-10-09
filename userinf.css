@@ -1,0 +1,469 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+img {
+  width: 100px;
+  height: auto;
+  vertical-align: middle;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  background-color: #d0e6ff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 30px 20px;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Sidebar */
+#navdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 220px;
+  height: 100vh;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  background-color: #dbe9ff;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+nav a.acard {
+  text-decoration: none;
+  color: white;
+  background-color: #0b3d91;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  text-align: center;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+nav a.acard:hover {
+  transform: translateY(-5px);
+  background-color: #164dba;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* Main Signup Form Section */
+main {
+  width: 100%;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  background-color: #f0f7ff;
+  padding: 40px 50px;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(11, 61, 145, 0.15);
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: fit-content;
+}
+
+.pwdeye {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.pwdeye input {
+  padding-right: 2.5rem;
+  width: 100%;
+}
+
+.toggle-eye {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1.2rem;
+}
+
+.form-container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0b3d91;
+  margin-bottom: 24px;
+}
+
+/* Label + Input Blocks */
+label {
+  align-self: stretch;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0b3d91;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 2px solid #0b3d91;
+  border-radius: 10px;
+  background-color: #eaf4ff;
+  color: #333;
+  margin-top: 6px;
+  box-shadow: 0 2px 6px rgba(11, 61, 145, 0.08);
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #164dba;
+  box-shadow: 0 0 6px #164dba88;
+}
+
+input::placeholder {
+  color: #777;
+}
+
+/* Checkbox Style */
+input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.2);
+  accent-color: #0b3d91;
+}
+label input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+  margin-top: 0;
+}
+
+/* Button */
+#subbtn,
+button[type="submit"] {
+  background-color: #0b3d91;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(11, 61, 145, 0.18);
+}
+
+#subbtn:hover,
+button[type="submit"]:hover {
+  background-color: #164dba;
+  transform: translateY(-2px) scale(1.03);
+}
+
+/* Password Strength Meter */
+meter#pwdstrength {
+  width: 100%;
+  height: 8px;
+  margin-top: 8px;
+  border-radius: 6px;
+  background: #ddd;
+}
+small#txtstrength {
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 4px;
+  display: block;
+}
+
+/* Card (if used elsewhere) */
+.card {
+  background-color: #dbe9ff;
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(11, 61, 145, 0.2);
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #navdiv {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: static;
+    box-shadow: none;
+    background-color: transparent;
+    padding: 10px;
+  }
+
+  nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav a.acard {
+    flex: 1 0 30%;
+    max-width: 150px;
+  }
+
+  main {
+    width: 100%;
+    padding: 20px 10px;
+  }
+
+  .form-container {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .form-container h2 {
+    font-size: 1.6rem;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="tel"],
+  input[type="date"] {
+    font-size: 0.95rem;
+    padding: 10px 12px;
+  }
+
+  #subbtn {
+    width: 100%;
+  }
+}
+
+/* FAQ Styles */
+.faq-section {
+  margin-top: 30px;
+  text-align: left;
+  width: 100%;
+}
+.faq-item {
+  margin-bottom: 10px;
+}
+.faq-toggle {
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  border: none;
+  background: #d0e6ff;
+  color: #2d42ff;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.faq-toggle:hover {
+  background: #0f0083;
+  color: white;
+}
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #eaf4ff;
+  padding: 0 10px;
+  border-radius: 6px;
+  transition: max-height 0.4s ease;
+}
+.faq-content p {
+  padding: 10px;
+  margin: 0;
+  color: #333;
+}
+
+.form-container {
+  animation: fadeSlideIn 0.8s ease forwards;
+  opacity: 0;
+}
+/* Smooth transition for FAQ toggle */
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.3s ease;
+  padding: 0 10px;
+  background-color: #f8f8f8;
+  border-left: 3px solid #444;
+  margin-bottom: 10px;
+}
+
+.faq-toggle.active + .faq-content {
+  padding: 10px;
+}
+
+/* Button hover smooth effect */
+button {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.02);
+}
+
+/* Essential CSS for the custom popup */
+.popup {
+    /* ... your positioning and transition styles ... */
+    opacity: 0; 
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.popup.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup.error {
+    background-color: #d9534f; /* Red background for error */
+}
+
+.popup.success {
+    background-color: #5cb85c; /* Green background for success (optional but good practice) */
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: translateX(-50%) translateY(-60px);
+    opacity: 0;
+  }
+  55% {
+    transform: translateX(-50%) translateY(10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* POPUP STYLES */
+.popup-button {
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #0b3d91;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in;
+  display: block;
+}
+
+.popup-button:hover {
+  background-color: #063074;
+}
+
+/* Add this CSS at the bottom or integrate into existing style rules */
+
+/* Popup overlay */
+.popup-model {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Popup box */
+.popup-content {
+  background-color: #fff;
+  color: #000;
+  width: 80%;
+  max-width: 600px;
+  max-height: 70vh; /* limits height */
+  padding: 25px;
+  border-radius: 8px;
+  position: relative;
+  overflow-y: auto; /* scrolls inside */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Close button */
+.popup-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Hide popup by default */
+.hidden {
+  display: none;
+}
+
+/* Style for T&C button */
+.popup-button {
+  margin-top: 10px;
+  background-color: #0b3d91;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.popup-button:hover {
+  background-color: #164dba;
+}

@@ -1,0 +1,9 @@
+[
+    {
+        "username": "24dcs088",
+        "email": "24DCS088@charusat.edu.in",
+        "password": "swayam088",
+        "phone": "9824300664",
+        "terms": true
+    }
+]

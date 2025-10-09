@@ -1,0 +1,25 @@
+{
+  "name": "brainbin/student-portal",
+  "description": "BrainBin Student Portal with Google Drive Integration",
+  "type": "project",
+  "require": {
+    "php": ">=7.4",
+    "google/apiclient": "2.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "BrainBin\\": "src/"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": ["@php -r \"echo 'Google API Client installed successfully!\\n';\""]
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  }
+}

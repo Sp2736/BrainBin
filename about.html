@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About | BrainBin</title>
+    <link rel="stylesheet" href="about.css" />
+    <link rel="icon" href="icon2.png" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>About BrainBin <img src="icon1.png" /></h1>
+        <p>A comprehensive academic resource platform for all semesters.</p>
+      </header>
+      <main>
+        <section class="slider-section">
+          <h2>Highlights of BrainBin</h2>
+          <div class="slider-container">
+            <button class="slider-btn" id="prevBtn">&#10094;</button>
+            <div class="slide" id="slideText">
+              Access semester-wise notes, syllabi & plans at one place.
+            </div>
+            <button class="slider-btn" id="nextBtn">&#10095;</button>
+          </div>
+        </section>
+        <section>
+          <h2>Project Overview</h2>
+          <p>
+            <strong>BrainBin</strong> is a centralized web-based resource portal
+            designed for college students to access semester-wise materials,
+            including notes, syllabi, detailed plans, and important links, in a
+            single location.
+          </p>
+          <p>
+            The portal is intended to minimize the disorganization of scattered
+            files by providing a well-structured, user-friendly digital
+            repository for academic resources.
+          </p>
+        </section>
+
+        <section>
+          <h2>Objective</h2>
+          <ul>
+            <li>
+              Allow students to browse and download semester-specific resources
+              efficiently.
+            </li>
+            <li>
+              Offer an interactive and visually clear user interface with
+              support for dark and light modes.
+            </li>
+            <li>
+              Demonstrate front-end development concepts as outlined in the Web
+              Technology syllabus.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Technology Stack and Tools</h2>
+          <ul>
+            <li><strong>HTML5</strong> – For semantic structure and layout</li>
+            <li><strong>CSS3</strong> – For styling and theme support</li>
+            <li>
+              <strong>JavaScript</strong> – For interactivity, DOM manipulation,
+              form validation, and JSON handling
+            </li>
+            <li>
+              <strong>JSON</strong> – For simulating resource data structures
+            </li>
+            <li>
+              <strong>LocalStorage</strong> – For session simulation and state
+              management
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Site Architecture</h2>
+          <p>The website is organized into modular pages:</p>
+          <ul>
+            <li><code>index.html</code> – Homepage and navigation</li>
+            <li><code>dashboard.html</code> – Interactive resource overview</li>
+            <li>
+              <code>first.html</code> to <code>sixth.html</code> –
+              Semester-specific content
+            </li>
+            <li>
+              <code>portfolio.html</code> – Displays student progress or saved
+              items
+            </li>
+            <li>
+              <code>login.html</code>, <code>contact.html</code> – Simulate user
+              interaction and form processing
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Syllabus Integration</h2>
+          <p>
+            This project addresses key components of the Web Technology
+            syllabus, including:
+          </p>
+          <ul>
+            <li>User interface development and styling</li>
+            <li>JavaScript objects, events, and DOM manipulation</li>
+            <li>Dynamic content rendering using JSON</li>
+            <li>Form validation and session simulation</li>
+            <li>Basic web application security practices</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Future Scope</h2>
+          <p>Potential future enhancements for BrainBin include:</p>
+          <ul>
+            <li>
+              User authentication and file upload capabilities (with server-side
+              implementation)
+            </li>
+            <li>Database-supported resource management</li>
+            <li>
+              Real-time updates, announcements, and features for student
+              contributions
+            </li>
+          </ul>
+        </section>
+
+        <footer>
+          <div id="navdiv">
+            <nav>
+              <a href="index.html" class="acard">Go to Home</a>
+              <a href="contact.html" class="acard">Contact Us</a>
+            </nav>
+          </div>
+          <p>&copy; 2025 BrainBin by Swayam Patel</p>
+        </footer>
+      </main>
+    </div>
+    <script>
+      const highlights = [
+        "Access semester-wise notes, syllabi & plans at one place.",
+        "Made by students, for the students.",
+        "Built to align with your B.Tech Web Tech syllabus & projects.",
+      ];
+
+      let index = 0;
+      const slideText = document.getElementById("slideText");
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+
+      function showSlide(indexToShow) {
+        slideText.classList.add("fade-out");
+        setTimeout(() => {
+          slideText.textContent = highlights[indexToShow];
+          slideText.classList.remove("fade-out");
+        }, 300);
+      }
+
+      prevBtn.addEventListener("click", () => {
+        index = (index - 1 + highlights.length) % highlights.length;
+        showSlide(index);
+      });
+
+      nextBtn.addEventListener("click", () => {
+        index = (index + 1) % highlights.length;
+        showSlide(index);
+      });
+
+      // Optional auto-slide with fade
+      setInterval(() => {
+        index = (index + 1) % highlights.length;
+        showSlide(index);
+      }, 3000);
+
+      // Optional auto-slide
+      setInterval(() => {
+        index = (index + 1) % highlights.length;
+        slideText.textContent = highlights[index];
+      }, 3000);
+    </script>
+  </body>
+</html>

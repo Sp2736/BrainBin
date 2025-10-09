@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swayam Patel | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="#">Portfolio</a>
+      </div>
+      <nav class="desktop-nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About Me</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+        <i data-feather="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav" id="mobile-nav">
+    <div class="mobile-nav-container">
+      <a href="#home" class="mobile-nav-link">Home</a>
+      <a href="#about" class="mobile-nav-link">About Me</a>
+      <a href="#projects" class="mobile-nav-link">Projects</a>
+      <a href="#skills" class="mobile-nav-link">Skills</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Hi, I'm <span class="highlight">Swayam Patel</span></h1>
+            <p class="subtitle">A passionate BTech student and aspiring full-stack developer</p>
+            <div class="cta-buttons">
+              <a href="#projects" class="btn btn-primary">
+                See My Work
+                <i data-feather="arrow-right" class="btn-icon"></i>
+              </a>
+              <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="profile-image">
+              <img src="public\images\profile.jpg" alt="Swayam Patel"> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="adminicon.jpeg" alt="About Me">
+          </div>
+          <div class="about-text">
+            <p>
+              I'm a BTech student in my second year, specializing in Computer Science. My journey in technology
+              started with a curiosity about how digital products are built, which led me to explore various
+              programming languages and frameworks.
+            </p>
+            <p>
+              Currently, I'm focused on full-stack development, with a particular interest in creating intuitive
+              user interfaces and robust backend systems. I believe in writing clean, maintainable code and building
+              applications that solve real-world problems.
+            </p>
+            <p class="philosophy">
+              My philosophy: "Building with empathy and precision, learning something new every day."
+            </p>
+            <div class="badges">
+              <span class="badge">Problem Solver</span>
+              <span class="badge">Team Player</span>
+              <span class="badge">Continuous Learner</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="darkangel.png" alt="Logo of Dark Angel">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Dark Angel</h3>
+              <p class="project-description">
+                <b>Dark Angel</b> is an aesthetic, minimal, and deep dark theme for Visual Studio Code — created for developers who crave focus, mood, and a vibe. Whether you’re debugging under dim lights or writing code like lyrics, this theme’s got your back.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">JSON</span>
+                <span class="tech-badge">VSCode</span>
+                <span class="tech-badge">VSCode Extension API</span>
+                <span class="tech-badge">Azure DevOps Token</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Sp2736/dark-angel" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i data-feather="github" class="btn-icon"></i>
+                  Code
+                </a>
+                <a href="https://marketplace.visualstudio.com/items?itemName=sp2736.dark-angel-by-sp" target="_blank" rel="noopener noreferrer" class="btn btn-sm">
+                  <i data-feather="external-link" class="btn-icon"></i>
+                  Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="whitedevil.png" alt="Logo of WHite Devil">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">White Devil</h3>
+              <p class="project-description">
+                <b>White Devil</b> is a crisp, modern, and clean light theme for Visual Studio Code — crafted for developers who thrive in daylight, clarity, and minimalism. Whether you’re building the future with the sunrise or refactoring in a sunlit workspace, this theme keeps you sharp and focused.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">JSON</span>
+                <span class="tech-badge">VSCode</span>
+                <span class="tech-badge">VSCode Extension API</span>
+                <span class="tech-badge">Azure DevOps Token</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Sp2736/white-devil" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i data-feather="github" class="btn-icon"></i>
+                  Code
+                </a>
+                <a href="https://marketplace.visualstudio.com/items?itemName=sp2736.white-devil-by-sp" target="_blank" rel="noopener noreferrer" class="btn btn-sm">
+                  <i data-feather="external-link" class="btn-icon"></i>
+                  Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/placeholder.svg?height=200&width=300" alt="Project-3">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Project-3</h3>
+              <p class="project-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis culpa cumque perferendis quos accusantium, tempora aliquam quibusdam repellat suscipit optio autem ipsam praesentium, animi libero nihil eligendi! Consectetur, praesentium. Accusantium labore inventore aliquam, quis dolore iste perferendis nesciunt aspernatur impedit aliquid necessitatibus ipsam? Molestiae inventore qui ratione fugit repellat quisquam.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">tool-1</span>
+                <span class="tech-badge">tool-2</span>
+                <span class="tech-badge">tool-3</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/username/project-3" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i data-feather="github" class="btn-icon"></i>
+                  Code
+                </a>
+                <a href="https://demo-project-3.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-sm">
+                  <i data-feather="external-link" class="btn-icon"></i>
+                  Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/placeholder.svg?height=200&width=300" alt="Project-4">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Project-4</h3>
+              <p class="project-description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor enim impedit suscipit ut eum illum magnam iste, cumque sint earum porro vero eaque non! Dolor odit doloribus itaque cupiditate accusamus labore laborum, modi dolorum dicta doloremque quidem temporibus tempora architecto. Quasi accusamus nihil adipisci placeat nesciunt dolorem. Illum, corporis! Distinctio.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">tool-1</span>
+                <span class="tech-badge">tool-2</span>
+                <span class="tech-badge">tool-3</span>
+                <span class="tech-badge">tool-4</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/username/project-4" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i data-feather="github" class="btn-icon"></i>
+                  Code
+                </a>
+                <a href="https://demo-project-4.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-sm">
+                  <i data-feather="external-link" class="btn-icon"></i>
+                  Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/placeholder.svg?height=200&width=300" alt="Project-5">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Project-5</h3>
+              <p class="project-description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi est ex placeat quod corrupti voluptatibus repudiandae soluta quae nulla, reprehenderit doloribus dolorem officia nobis veritatis veniam ad cupiditate dolores porro assumenda necessitatibus suscipit eum atque eos. Doloremque, quis placeat culpa, iure porro dolore magni sint ea reprehenderit fugiat labore?
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">tool-1</span>
+                <span class="tech-badge">tool-2</span>
+                <span class="tech-badge">tool-3</span>
+                <span class="tech-badge">tool-4</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/username/project-5" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i data-feather="github" class="btn-icon"></i>
+                  Code
+                </a>
+                <a href="https://demo-project-5.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-sm">
+                  <i data-feather="external-link" class="btn-icon"></i>
+                  Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/placeholder.svg?height=200&width=300" alt="Project-6">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Project-6</h3>
+              <p class="project-description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore assumenda officiis veniam nesciunt obcaecati illo, neque suscipit a, provident quidem magni modi optio praesentium ea sequi nihil laudantium explicabo! Cum asperiores laborum ullam. Voluptas a ducimus tempore. Necessitatibus cum deleniti, soluta aperiam exercitationem quia fuga! Dignissimos eligendi delectus eius provident?
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">tool-1</span>
+                <span class="tech-badge">tool-2</span>
+                <span class="tech-badge">tool-3</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/username/portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i data-feather="github" class="btn-icon"></i>
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skills-container">
+          <!-- Programming Languages -->
+          <div class="skill-category">
+            <h3 class="category-title">Programming Languages</h3>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-name">Python</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-name">Java</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 75%"></div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-name">C++</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 70%"></div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-name">TypeScript</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Development -->
+          <div class="skill-category">
+            <h3 class="category-title">Web Development</h3>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <div class="skill-name">HTML</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 95%"></div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-name">CSS</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-name">React</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-name">Node.js</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-name">Next.js</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 75%"></div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-name">Tailwind</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & Technologies -->
+          <div class="skill-category">
+            <h3 class="category-title">Tools & Technologies</h3>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <div class="skill-name">Git</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-name">VS Code</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 95%"></div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-name">Figma</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 75%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-category">
+            <h3 class="category-title">Databases</h3>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <div class="skill-name">MongoDB</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-name">MySQL</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-name">Firebase</div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+          <div class="contact-form-container">
+            <form class="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Your message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            </form>
+          </div>
+
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i data-feather="mail"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Email</h3>
+                <a href="mailto:swayampatel2736@gmail.com">Click Here to Mail</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i data-feather="linkedin"></i>
+              </div>
+              <div class="contact-details">
+                <h3>LinkedIn</h3>
+                <a href="https://linkedin.com/in/swayam-patel-316ba5317" target="_blank" rel="noopener noreferrer">
+                  Click Here to View
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i data-feather="github"></i>
+              </div>
+              <div class="contact-details">
+                <h3>GitHub</h3>
+                <a href="https://github.com/Sp2736" target="_blank" rel="noopener noreferrer">
+                  View Me on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p class="copyright">© Swayam Patel 2025. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="#home" class="footer-link">Home</a>
+        <a href="#about" class="footer-link">About</a>
+        <a href="#projects" class="footer-link">Projects</a>
+        <a href="#skills" class="footer-link">Skills</a>
+        <a href="#contact" class="footer-link">Contact</a>
+      </nav>
+      <div class="social-links">
+        <a href="https://github.com/Sp2736" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i data-feather="github"></i>
+        </a>
+        <a href="https://linkedin.com/in/swayam-patel-316ba5317" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i data-feather="linkedin"></i>
+        </a>
+        <a href="mailto:swayampatel2736@gmail.com" aria-label="Email">
+          <i data-feather="mail"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    feather.replace();
+  </script>
+</body>
+</html>

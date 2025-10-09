@@ -1,0 +1,40 @@
+# Credentials and sensitive files
+credentials/
+service-account.json
+*.json.key
+
+# Composer dependencies
+/vendor/
+composer.lock
+
+# Environment files
+.env
+.env.local
+
+# Database backups
+*.sql.backup
+backups/
+
+# Uploaded files
+uploads/
+temp/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+error_log
+debug.log
+
+# Cache
+cache/
+*.cache

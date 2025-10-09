@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | BrainBin</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="icon" href="icon2.png" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <a class="acard" href="index.html">Go to Home</a>
+          <a class="acard" href="portfolio/admin.html" target="_blank"
+            >Portfolio</a
+          >
+        </nav>
+      </header>
+
+      <main>
+        <div class="form-container">
+          <h2>Contact Us <img src="icon1.png" /></h2>
+          <p>
+            If you have any questions or inquiries, please fill out the form
+            below:
+          </p>
+
+          <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button id="subbtn" type="submit">Send Message</button>
+          </form>
+        </div>
+
+        <section class="alt-contact">
+          <h3>Other Ways to Reach Us</h3>
+          <p>
+            Email:
+            <a href="mailto:swayampatel2736@gmail.com" target="_blank"
+              >Click Here to Mail</a
+            >
+          </p>
+          <p>
+            LinkedIn:
+            <a
+              href="https://in.linkedin.com/in/swayam-patel-316ba5317"
+              target="_blank"
+              >Click Here to Visit</a
+            >
+          </p>
+          <p>
+            Instagram:
+            <a
+              href="https://www.instagram.com/sp_27.03?igsh=MWhna2U1aDBhamFhcg=="
+              target="_blank"
+              >Click Here to View</a
+            >
+          </p>
+        </section>
+      </main>
+    </div>
+    <!-- Popup Confirmation model -->
+    <div id="contact-popup" class="popup-model hidden">
+      <div class="popup-content">
+        <span id="close-contact-popup" class="popup-close">&times;</span>
+        <h3>Message Sent!</h3>
+        <p>Thank you for reaching out. We'll get back to you soon.</p>
+      </div>
+    </div>
+    <script>
+      const form = document.querySelector("form");
+      const popup = document.getElementById("contact-popup");
+      const closePopup = document.getElementById("close-contact-popup");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault(); // prevent actual submission
+        popup.classList.remove("hidden");
+        form.reset();
+      });
+
+      closePopup.addEventListener("click", () => {
+        popup.classList.add("hidden");
+      });
+
+      window.addEventListener("click", (e) => {
+        if (e.target === popup) {
+          popup.classList.add("hidden");
+        }
+      });
+    </script>
+  </body>
+</html>
