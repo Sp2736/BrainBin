@@ -1,0 +1,29 @@
+WEBSITE HAS 3 UNITS:
+~ client (the user that uses browser to connect with server)
+~ server (the place where clients interact with websites)
+~ browser (the engine that brings websites to clients from server)
+CLIENT --> BROWSER --> SERVER --> BROWSER --> CLIENT
+
+FRONTEND MADE THROUGH html, css, javascript
+HTML --> the skeleton of websites
+CSS --> the appearance of websites
+JAVASCRIPT --> to add interaction with websites (client side scripting)
+hence, css adds beauty and javascript adds brain
+
+to start the html coding, type '!' and hit enter.
+the basic format appears forehand. to link the css page, type 'link' and press css option, then edit the css filename. it comes in head tag.
+to connect javascript file, type 'script' and select src option. edit name of js file. it comes in body tag.
+
+# alt+shift+down arrow --> copies current syntax in next line
+# alt+clicking creates multiple cursors to type simultaneously
+# use 'lorem' in p tag (followed by no. of words) to get random sentence for the sake of checking template looks.
+# in anchor, use target="_blank" to open that link in new tab.
+# to have links in new lines, put them in different list tags.
+# colspan=merge columns and rowspan=merge rows. both are used in the td tag.
+#tfoot for footer, thead for header, tbody to represent table body section.
+# CLS --> cumulative layout shift, i.e. page load thata ketlu shift thay due to adds or anything
+# LCP --> largest contentful paint. a means of measuring user feedback about page loading, or time taken for largest element of page to load. Good score is less than 2.5 seconds
+FID --> first input delay, i.e. time taken for an action to occur (good score is not more than 250 milliseconds)
+# div tag used to push text field or input fields below the label or heading of that field.
+# in the input tags, type required in the input tag to make it * field. type autofocus to start with that field. we use pattern attribute to make captchas.
+# block elements are those which occupy entire row space when applied bg color. inline are those which occupy only their space, and allow other elements in their row.

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- Login Page for BrainBin -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | BrainBin</title>
+    <link rel="stylesheet" href="userinf.css" />
+    <link rel="icon" href="icon2.png" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar Navigation -->
+      <header>
+        <div id="navdiv">
+          <nav>
+            <a href="index.html" class="acard">Go to Home</a>
+            <a href="portfolio/admin.html" target="_blank" class="acard"
+              >Portfolio</a
+            >
+            <a href="contact.html" class="acard">Contact Us</a>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Main Login Section -->
+      <main>
+        <div class="form-container">
+          <h2>Login to Dashboard <img src="icon1.png" /></h2>
+          <form method="post" id="loginForm" action="login.php">
+            <label for="username">
+              Username:
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Your College ID"
+                required
+                pattern="[A-Za-z0-9]+"
+              />
+            </label>
+
+            <div class="pwdeye">
+              <label for="password">
+                Password:
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Your Password"
+                  required
+                  pattern="[A-Za-z0-9]+"
+                />
+                <span
+                  class="toggle-eye"
+                  onclick="toggleVisibility('password', this)"
+                  >( - _ - )</span
+                >
+              </label>
+            </div>
+
+            <label>
+              <p>
+                <input type="checkbox" id="remember" name="remember" />
+                Remember me for 7 days
+              </p>
+            </label>
+            <label>
+              <p>
+                <input type="checkbox" id="terms" name="terms" required />
+                I want to excel at studies!
+              </p>
+            </label>
+            <div id="errorMessages" style="margin-bottom: 10px"></div>
+            <button type="submit" id="subbtn">Login to BrainBin</button>
+          </form>
+
+          <!-- Collapsible FAQ -->
+          <section class="faq-section">
+            <div>
+              <h3>Frequently Asked Questions</h3>
+            </div>
+            <br />
+            <div class="faq-item">
+              <button class="faq-toggle">I forgot my password?</button>
+              <div class="faq-content">
+                <p>
+                  Click on "Contact Us" or reach admin to reset your password.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-toggle">
+                Do I need to confirm my password?
+              </button>
+              <div class="faq-content">
+                <p>
+                  Yes, confirming your password ensures there is no typo
+                  mistake.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <div id="popupBanner" class="popup">
+      <span id="popupMessage"></span>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
