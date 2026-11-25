@@ -289,3 +289,12 @@ For technical support or queries:
 ---
 
 **Note**: This portal supports both server-based file uploads and Google Drive integration. The Drive integration approach is recommended for larger deployments with many students and materials.
+
+
+---
+
+## 📦 Project Snapshot
+
+<!--ARCHIVE_STATS_START-->
+<!-- auto-generated — do not edit manually -->
+<!--ARCHIVE_STATS_END-->
